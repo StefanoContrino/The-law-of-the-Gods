@@ -1,0 +1,3 @@
+displayName = TheLawOfTheGods
+author = Svenka
+version = 0.1

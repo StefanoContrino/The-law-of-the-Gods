@@ -1,0 +1,15 @@
+Mods: {
+	TheLawOfTheGods: {
+		Items: {
+			RedApple: {
+				DisplayName: Red Apple
+				Tooltip: ""
+			}
+
+			Sword: {
+				DisplayName: Sword
+				Tooltip: ""
+			}
+		}
+	}
+}
