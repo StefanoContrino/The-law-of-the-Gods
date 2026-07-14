@@ -33,27 +33,40 @@ namespace TheLawOfTheGods.Content.Projectiles
 
 
 		public override void AI()
-		{
-			Player player = Main.player[Projectile.owner];
+{
+	Player player = Main.player[Projectile.owner];
 
-			Projectile.Center = player.Center;
+	// Tiene la spada viva mentre il giocatore attacca
+	player.heldProj = Projectile.whoAmI;
 
-			Projectile.rotation = player.itemRotation;
+	// Direzione verso il mouse
+	Vector2 direction = Main.MouseWorld - player.Center;
+	direction.Normalize();
 
-			Projectile.spriteDirection = player.direction;
+	// Distanza della spada dal giocatore
+	float distance = 40f;
+
+	Projectile.Center = player.Center + direction * distance;
+
+	// Rotazione della lama
+	Projectile.rotation = direction.ToRotation();
+
+	// Flip corretto
+	Projectile.spriteDirection = direction.X > 0 ? 1 : -1;
 
 
-			Projectile.frameCounter++;
+	// Animazione frame
+	Projectile.frameCounter++;
 
-			if (Projectile.frameCounter >= 5)
-			{
-				Projectile.frameCounter = 0;
-				Projectile.frame++;
+	if (Projectile.frameCounter >= 5)
+	{
+		Projectile.frameCounter = 0;
+		Projectile.frame++;
 
-				if (Projectile.frame >= 4)
-					Projectile.frame = 0;
-			}
-		}
+		if (Projectile.frame >= 4)
+			Projectile.frame = 0;
+	}
+}
 
 
 		public override bool PreDraw(ref Color lightColor)
