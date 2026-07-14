@@ -20,6 +20,11 @@ Mods: {
 				DisplayName: The Jews Blood
 				Tooltip: ""
 			}
+
+			BreastPlate: {
+				DisplayName: Breast Plate
+				Tooltip: ""
+			}
 		}
 
 		Projectiles.TheJewsBloodSlash.DisplayName: The Jews Blood Slash
