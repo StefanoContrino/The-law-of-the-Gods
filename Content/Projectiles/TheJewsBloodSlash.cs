@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -25,7 +26,6 @@ namespace TheLawOfTheGods.Content.Projectiles
 			Projectile.DamageType = DamageClass.Melee;
 
 			Projectile.penetrate = -1;
-
 			Projectile.tileCollide = false;
 
 			Projectile.timeLeft = 40;
@@ -36,26 +36,58 @@ namespace TheLawOfTheGods.Content.Projectiles
 		{
 			Player player = Main.player[Projectile.owner];
 
-
 			Projectile.Center = player.Center;
 
+			Projectile.rotation = player.itemRotation;
 
-			Projectile.rotation =
-				Projectile.velocity.ToRotation();
+			Projectile.spriteDirection = player.direction;
 
 
 			Projectile.frameCounter++;
 
-
 			if (Projectile.frameCounter >= 5)
 			{
 				Projectile.frameCounter = 0;
-
 				Projectile.frame++;
 
 				if (Projectile.frame >= 4)
 					Projectile.frame = 0;
 			}
+		}
+
+
+		public override bool PreDraw(ref Color lightColor)
+		{
+			Texture2D texture = ModContent.Request<Texture2D>(Texture).Value;
+
+
+			Rectangle frame = new Rectangle(
+				0,
+				Projectile.frame * 32,
+				32,
+				32
+			);
+
+
+			Vector2 origin = frame.Size() / 2;
+
+
+			Main.EntitySpriteDraw(
+				texture,
+				Projectile.Center - Main.screenPosition,
+				frame,
+				lightColor,
+				Projectile.rotation,
+				origin,
+				1f,
+				Projectile.spriteDirection == 1
+					? SpriteEffects.None
+					: SpriteEffects.FlipHorizontally,
+				0
+			);
+
+
+			return false;
 		}
 	}
 }
