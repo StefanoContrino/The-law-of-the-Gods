@@ -15,6 +15,11 @@ Mods: {
 				DisplayName: Heart Sword
 				Tooltip: ""
 			}
+
+			TheJewsBlood: {
+				DisplayName: The Jews Blood
+				Tooltip: ""
+			}
 		}
 	}
 }
