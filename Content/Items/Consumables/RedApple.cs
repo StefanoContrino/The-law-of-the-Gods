@@ -55,8 +55,7 @@ namespace TheLawOfTheGods.Content.Items.Consumables
 
             player.itemRotation = player.direction * 0.15f;
 
-        }
-
+        } 
 
         public override void AddRecipes()
         {

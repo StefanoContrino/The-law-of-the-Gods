@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "v60rn30T+f8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\contr\\OneDrive\\Documenti\\My Games\\Terraria\\tModLoader\\ModSources\\TheLawOfTheGods\\TheLawOfTheGods.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\contr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.29\\microsoft.windowsdesktop.app.ref.8.0.29.nupkg.sha512",
+    "C:\\Users\\contr\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.29\\microsoft.netcore.app.ref.8.0.29.nupkg.sha512",
+    "C:\\Users\\contr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.29\\microsoft.aspnetcore.app.ref.8.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}
