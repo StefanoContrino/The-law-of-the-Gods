@@ -17,7 +17,7 @@ using Terraria.Utilities;
 namespace TheLawOfTheGods.NPCs.TownNPCs
 {
     
-    public class Bandit : ModNPC
+    public class Charles : ModNPC
     {
 
         public override void SetStaticDefaults()
@@ -44,8 +44,8 @@ namespace TheLawOfTheGods.NPCs.TownNPCs
             NPC.townNPC = true;
             NPC.friendly = true;
             NPC.lavaImmune = false;
-            NPC.width = 18;
-            NPC.height = 44;
+            NPC.width = 16;
+            NPC.height = 1;
             NPC.aiStyle = NPCAIStyleID.Passive;
             NPC.damage = 10;
             NPC.defense = 15;
