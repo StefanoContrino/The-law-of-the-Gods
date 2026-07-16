@@ -44,8 +44,8 @@ namespace TheLawOfTheGods.NPCs.TownNPCs
             NPC.townNPC = true;
             NPC.friendly = true;
             NPC.lavaImmune = false;
-            NPC.width = 16;
-            NPC.height = 1;
+            NPC.width = 32;
+            NPC.height = 50;
             NPC.aiStyle = NPCAIStyleID.Passive;
             NPC.damage = 10;
             NPC.defense = 15;
