@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheLawOfTheGods")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b5be5820fcf3c7a7dcc915787dbb27869f52cc5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b353786258f43b4e39f036f660c1fd1462294d36")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheLawOfTheGods")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheLawOfTheGods")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
