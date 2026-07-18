@@ -9,7 +9,7 @@ Current planned features:
 * 2 new Town NPCs
 * 30 new weapons for each class
 * 17 new enemies, 8 in Pre-Hardmode and 9 in Hardmode
-* 3 new biomes: 1 surface biomes, 1 underground biomes, and 1 space biome
+* 3 new biomes: 1 surface biome, 1 underground biome, and 1 space biome
 * A new Snow Temple to expand the existing biome
 * 4 new bosses inspired by Lovecraft's works, 2 in Pre-Hardmode and 2 in Hardmode
 * Hundreds of new items, including blocks, gadgets, lore items, and miscellaneous content
