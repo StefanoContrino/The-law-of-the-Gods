@@ -22,7 +22,7 @@ namespace TheLawOfTheGods.NPCs.TownNPCs
 
         public override void SetStaticDefaults()
         {
-            Main.npcFrameCount[Type] = 23;
+            Main.npcFrameCount[Type] = 25;
             NPCID.Sets.ExtraFramesCount[Type] = 9;
             NPCID.Sets.AttackFrameCount[Type] = 4;
             NPCID.Sets.DangerDetectRange[Type] = 500;
@@ -45,7 +45,7 @@ namespace TheLawOfTheGods.NPCs.TownNPCs
             NPC.friendly = true;
             NPC.lavaImmune = false;
             NPC.width = 20;
-            NPC.height = 50;
+            NPC.height = 40;
             NPC.aiStyle = NPCAIStyleID.Passive;
             NPC.damage = 10;
             NPC.defense = 15;
