@@ -25,6 +25,11 @@ Mods: {
 				DisplayName: Breast Plate
 				Tooltip: ""
 			}
+
+			DeepScale: {
+				DisplayName: Deep Scale
+				Tooltip: ""
+			}
 		}
 
 		Projectiles.TheJewsBloodSlash.DisplayName: The Jews Blood Slash
